@@ -15,3 +15,17 @@ finally:
 wiek = -5
 if wiek < 0:
     raise ValueError("Wiek nie może być ujemny")
+
+
+try:
+    x = int(input())
+    print(10 / x)
+except (ValueError, ZeroDivisionError):
+    print("Błędne dane wejściowe")
+
+# antywzorzec
+try:
+    x = int(input("Podaj liczbę: "))
+    wynik = 10 / x
+except:
+    print("To nie jest liczba")

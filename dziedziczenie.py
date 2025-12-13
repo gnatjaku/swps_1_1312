@@ -16,5 +16,5 @@ class Pies(Zwierzak):
         print("Jestem psem o imieniu", self.imie)
 
 
-p1 = Pies("Azor", "mops")
-p1.przedstaw_sie()
+# p1 = Pies("Azor", "mops")
+# p1.przedstaw_sie()

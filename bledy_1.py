@@ -7,7 +7,7 @@ except ValueError:
     print("To nie jest liczba")
 else:
     print(wynik)
-    f = open("test.txt", "w")
+    f = open(".gitignore", "w")
     f.write(str(wynik))
 finally:
     print("zakończono działanie programu")

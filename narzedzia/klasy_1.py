@@ -10,6 +10,9 @@ class Osoba:
     def przywitaj(self):
         print("Hej, mam na imię: ",self.imie)
 
+    def przedstaw_sie(self):
+        print(f"Cześć, jestem {self.imie} i mam {self.wiek} lat.")
+
 
 class Zwierzak:
     __wiek = 0
@@ -29,3 +32,13 @@ class Zwierzak:
         return "Jestem obiektem klasy zwierzak"
     # pass
 
+class Kot(Zwierzak):
+
+    def __init__(self, imie, kolor_sierci):
+        super().__init__()
+        self.__imie = imie
+        self.__kolor_sierci = kolor_sierci
+
+
+    def przedstaw_sie(self):
+        print(f"Jestem kotem, mam {self.__kolor_sierci} futro i na imię mi {self.__imie}.")

@@ -1,4 +1,4 @@
-from narzedzia.klasy_1 import Osoba, Zwierzak
+from narzedzia.klasy_1 import Osoba, Zwierzak, Kot
 from dziedziczenie import Pies
 import sys
 
@@ -15,3 +15,10 @@ zw1.jaki_wiek()
 
 p1 = Pies("azorek", rasa="mopsik")
 print(sys.path)
+
+os2 = Osoba("Jakub",'48',True)
+os2.przedstaw_sie()
+
+
+kot1 = Kot("Muza","szare")
+kot1.przedstaw_sie()
